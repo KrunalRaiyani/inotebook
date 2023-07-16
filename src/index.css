@@ -1,0 +1,249 @@
+/* navbar */
+.navbar-style{
+    margin-bottom: 40px;
+    font-size: 17px;
+    box-shadow: 0px -5px 15px #00000080;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.active{
+    color: rgb(179, 3, 3) !important ;
+}
+
+/* alert style */
+
+.alert-box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 96px;
+    width: 98%;
+    z-index: 20;
+}
+
+/* login and signup page */
+
+.login-container{
+    margin-top: 60px;
+}
+
+.login-form{
+    width: 40%;
+}
+
+.login-img{
+    width: 30%;
+}
+
+.signup-img{
+    width: 40%;
+    translate: 0 45px;
+}
+
+
+.inp-border{
+    border: 2px solid #00000096;
+}
+
+.inp-label{
+    font-weight: 500;
+    color: black;
+}
+
+/* create button and animation */
+
+.create-btn{
+    min-height: 100px;
+    background-color: rgb(255 255 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+    box-shadow: rgba(130, 130, 130, 0.4) 0px 4px 20px 6px;
+    outline: 2px solid rgb(236, 236, 236);
+    outline-offset: -5px;
+}
+
+.create-btn .btn-text{
+    color: white;
+    font-size: 5px;
+    visibility: hidden;
+    z-index: 1;
+    translate: -20%;
+    display: none;
+}
+
+.d-block{
+    display: block;
+    transition: all 0s 2s;
+}
+
+.d-none{
+    display: none;
+    transition: all 0s 2s;
+}
+
+.add-colour{
+background-color: #2d2d2d;
+transition: all 0s 2s;
+}
+
+.animated-btn{
+   animation: rotate 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+   translate: 20%;
+}
+
+.animated-text{
+   animation: text 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+   animation-delay: 2s;
+}
+
+.spinner-container{
+    position: fixed;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+.spinner{
+    width: 105px;
+}
+
+@keyframes rotate {
+    0%{
+        rotate: 0deg;
+        scale: 0;
+    }
+   
+    60%{
+        scale: 25;
+    }
+    90%{
+        scale: 25;
+    }
+    100%{
+        rotate: 360deg;
+        scale: 35;
+    }
+}
+
+@keyframes text {
+    0%{
+        font-size: 5px;
+        visibility: hidden;
+    }
+    100%{
+        font-size: 35px;
+        visibility: visible;
+    }
+}
+
+/* edit and delete button */
+
+.btn-style{
+    font-family: auto;
+    line-height: initial;
+    font-size: small;
+    padding: 5px;
+    border-radius: 30%;
+}
+
+.btn-edit{
+    color: green;
+    border: 2px solid green;
+}
+
+
+.btn-del{
+    color: red;
+    border: 2px solid red;
+}
+
+
+/* title heading first latter and underline style */
+
+.your-notes-heading{
+    border-bottom: 3px solid rgb(179, 3, 3) ;
+    width: fit-content;
+}
+
+.your-notes-heading::first-letter{
+color: rgb(179, 3, 3);
+}
+
+.list-title::first-letter{
+    color: rgb(179, 3, 3);
+}
+
+.hilight{
+    color: rgb(179, 3, 3);
+    font-weight: 600;
+}
+
+/* guide img */
+.guide-img{
+    width: 325px;
+}
+
+.create-img{
+    width: 280px;
+}
+
+
+/* media quries */
+
+@media (max-width: 992px) { 
+    .login-form{
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+.login-img{
+    margin-top: 60px;
+    width: 60%;
+}
+
+.signup-img{
+    width: 90%;
+    margin-top: 90px;
+}
+.guide-img{
+    max-width: 100%;
+}
+
+.create-img{
+    max-width: 100%;
+}
+.spinner-container{
+    top: 50%;
+}
+.spinner{
+    width: 100px;
+}
+ }
+
+@media (max-width: 325px) { 
+    .btn-contaier{
+       width: 15%;
+    }
+    .btn-edit{
+        display: block;
+        margin: 0;
+        margin-bottom: 2px;
+    }
+    
+    
+    .btn-del{
+        display: block;
+        margin: 0;
+        margin-top: 2px;
+    }
+    
+ }
